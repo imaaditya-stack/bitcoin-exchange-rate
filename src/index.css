@@ -1,13 +1,170 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+html {
+    background-color: #fff;
+}
+
+
+/* MATERIAL UI OVERIDES */
+
+.MuiToolbar-root,
+.makeStyles-toolbar-5 {
+    display: none !important;
+    height: 0 !important;
+}
+
+.MuiListItem-root {
+    padding: 20px 16px !important;
+    border-radius: 15px !important;
+}
+
+.MuiTypography-root {
+    font-size: 20px !important;
+}
+
+.MuiSelect-root {
+    width: 200px !important;
+}
+
+.MuiAppBar-colorPrimary {
+    background-color: #5843BE !important;
+}
+
+
+/* MATERIAL UI OVERIDES */
+
+.main-nav,
+.b-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav .MuiSvgIcon-root {
+    font-size: 40px !important;
+    color: #5843BE !important;
+}
+
+h4 {
+    font-size: 34px !important;
+    color: #5843BE !important;
+    margin-left: 20px;
+    font-weight: bold !important;
+    letter-spacing: 2px;
+}
+
+.grp-dropdown .dropdown-toggle {
+    background-color: #F6F7F8 !important;
+    color: #5843BE !important;
+    border: none !important;
+    height: 92px;
+    width: 200px !important;
+    font-size: 24px !important;
+    border-radius: 20px !important;
+}
+
+.profile .dropdown-toggle {
+    background-color: #F6F7F8 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    color: #5843BE !important;
+}
+
+.profile {
+    padding: 0 30px 0 40px;
+    background-color: #F6F7F8 !important;
+    border-radius: 20px;
+}
+
+.tools {
+    background-color: #F3F3F3;
+    height: 58.95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+
+.tools>span {
+    font-size: 24px;
+}
+
+.search-box {
+    display: flex;
+    background-color: #F6F7F8 !important;
+    align-items: center;
+    border-radius: 20px;
+    height: 92px;
+    width: 400px;
+    padding: 0 20px;
+}
+
+.search-box input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 25px !important;
+    background-color: #F6F7F8 !important;
+}
+
+.active {
+    background-color: #5843BE !important;
+    color: #fff !important;
+}
+
+.sidebar {
+    margin: 0 10px;
+}
+
+.ips {
+    display: flex;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .MuiToolbar-root,
+    .makeStyles-toolbar-5 {
+        display: block !important;
+    }
+    .main-nav,
+    .b-nav {
+        flex-direction: column;
+    }
+    h4 {
+        font-size: 15px !important;
+    }
+    .ips {
+        flex-direction: column;
+    }
+    .MuiSelect-root {
+        width: 50px !important;
+    }
+    .vs238d,
+    .grp-dropdown {
+        flex-direction: column;
+    }
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .profile {
+        margin-top: 10px;
+        padding: 20px;
+    }
+    .grp-dropdown .dropdown {
+        margin-top: 10px;
+    }
 }
